@@ -73,8 +73,12 @@ to this section's matching END comment to see page-specific styles.
 body {
   font-family: 'Pirata Mono Regular', Courier, sans-serif;
   color: #97ff48;
+  margin-top: 30px;
 }
 
 .info {
   font-size: 2vw;
+  padding: 0;
+  margin-top: 0;
+  height: 100vh;
 }
