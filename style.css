@@ -1,0 +1,80 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #69f7be;
+  --color-text-main: #000000;
+  --color-primary: #ffff00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+  background: black;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+
+@font-face {
+  font-family: "Pirata Proportional Regular";
+  src: url("https://cdn.glitch.global/5bcdf258-5c71-4961-800a-7fe96099e4bf/pirataproportional_regular_v5-regular-webfont.woff2?v=1682271846766")
+      format("woff2"),
+    url("https://cdn.glitch.global/5bcdf258-5c71-4961-800a-7fe96099e4bf/pirataproportional_regular_v5-regular-webfont.woff?v=1682271846607") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pirata Mono Light";
+  src: url("https://cdn.glitch.global/5bcdf258-5c71-4961-800a-7fe96099e4bf/piratamonolight_v4-light-webfont.woff2?v=1682271845673") format("woff2"),
+    url("https://cdn.glitch.global/5bcdf258-5c71-4961-800a-7fe96099e4bf/piratamonolight_v4-light-webfont.woff?v=1682271845469") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pirata Mono Regular";
+  src: url("https://cdn.glitch.global/5bcdf258-5c71-4961-800a-7fe96099e4bf/piratamonoregular_v13-regular-webfont.woff2?v=1682271846028") format("woff2"),
+    url("https://cdn.glitch.global/5bcdf258-5c71-4961-800a-7fe96099e4bf/piratamonoregular_v13-regular-webfont.woff?v=1682271845846") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pirata Mono Regular Italic";
+  src: url("https://cdn.glitch.global/5bcdf258-5c71-4961-800a-7fe96099e4bf/piratamonoregularitalic_v3-regularitalic-webfont.woff2?v=1682271846420")
+      format("woff2"),
+    url("https://cdn.glitch.global/5bcdf258-5c71-4961-800a-7fe96099e4bf/piratamonoregularitalic_v3-regularitalic-webfont.woff?v=1682271846216") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Pirata Mono Regular', Courier, sans-serif;
+  color: #97ff48;
+}
+
+.info {
+  font-size: 2vw;
+}
